@@ -17,37 +17,190 @@
 
 /*Custom styles*/
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
 .body {
+ 
   color: var(--main-txt-cl);
   background-color: var(--main-bg-cl);
   letter-spacing: 0.03em;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
+
+
 .header {
- 
+
   background: var(--main-bg-cl);
+  border: 1px solid #ECECEC;
+
 }
+
+
+.container {
+  
+ width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+
+
+   }
+
+/*Утиліти*/
+
+
+
+.list {
+padding: 0;
+margin: 0;
+  list-style: none;
+  text-decoration: none;
+
+
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+/*Menu Nav*/
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  
+ 
+ }
+
+ .header-list {
+  display: flex;
+ margin-left: 93px;
+  
+ }  
+ .list-contact {
+  margin-left: auto;
+ }
+
+
+.header-list .list-item + .list-item {
+  margin-left: 50px;
+}
+
 .header .link  {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--main-txt-cl);
+
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: var(--main-txt-cl);
+  
 }
+
+
+/* Main nav Ефективні рішення*/
+.main-title {
+  margin-bottom: 30px;
+  margin-top: 0;
+ text-align: center;
+}
+
+/*Наші особливості*/
+.list {
+  display: flex;
+
+}
+.title {
+  margin-top: 0;
+}
+
+/*about us*/
+
+.section-title {
+padding: 0;
+margin: 0;
+text-align: center;
+margin-bottom: 50px;
+
+}
+
+.feature-list {
+gap: 30px;
+}
+
+/*our team*/
+.team-name {
+  margin-top: 30px;
+  text-align: center;
+}
+.team-position {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+/*footer*/
+
+.footer-container {
+ 
+  text-align: left;
+  display: block;
+ padding: 0;
+margin: 0;
+
+}
+
+
+.footer-list-item {
+
+  text-align: left;
+  display: block;
+  
+}
+.footer-nav {
+ padding-top: 60px;
+ margin-bottom: 20px;
+
+}
+.footer-list-item:not(:last-child){
+  margin-bottom: 9px;
+}
+.footer-child {
+  padding-bottom: 60px;
+}
+
+
+/*Menu nav*/
 
 .contact-link {
     color: var(--light-txt-cl);
     text-decoration: none;
+    
 }
 .current {
   color: var(--accent-txt-cl);
 }
 
 .list-item {
+
   color: var(--light-txt-cl);
   text-decoration: none;
+  
+ 
 }
 
 .list-item .contact-link:hover,
@@ -60,8 +213,9 @@
   color: var(--accent-txt-cl);
 }
 
-/*Menu Nav*/
+
 .main-link {
+  
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-weight: 700;
@@ -69,6 +223,7 @@
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: #000000;
+
 }
 
 .main-link.active,
@@ -76,20 +231,24 @@
   color: var(--accent-txt-cl);
 }
 
-.list {
-  list-style: none;
-  text-decoration: none;
-}
+
 .list-item {
   background: var(--main-bg-cl);
 }
 
 /*section Ефективні рішення для вашого бізнесу*/
 
-.section {
-  background: #2f303a;
+.section-color {
+
+background: #2f303a;
+  text-align: center;
 }
 
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .main-title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -99,11 +258,16 @@
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
   color: var(--main-bg-cl);
+  margin-bottom: 30px;
 }
 
 .btn {
-  width: 216px;
-  height: 50px;
+  display: inline-block;
+ padding: 10px 32px;
+ margin-bottom: 200px;
+ text-align: center;
+
+  
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -114,7 +278,10 @@
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: var(--main-bg-cl);
+
+
 }
+
 
 .btn:hover,
 .btn:focus {
@@ -142,6 +309,7 @@
   text-transform: uppercase;
   line-height: calc(16 / 14);
   color: var(--main-txt-cl);
+  
 }
 
 .title-list {

@@ -14,18 +14,19 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
+<link rel="stylesheet" href="./css/modern-normalize.css">
     <!--Custom styles-->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="body">
     <header class="header">
+      <div class="container header-container">
       <!--Menu Nav-->
-      <nav class="main-nav">
+      <nav class="list-nav header-nav">
         <a class="main-link active" href="logo"
           >Web<span class="main-link">Studio</span></a
         >
-        <ul class="list">
+    <ul class="list header-list">
           <li class="list-item">
             <a class="link current" href="студія">Студія</a>
           </li>
@@ -37,46 +38,51 @@
           </li>
         </ul>
       </nav>
-      <ul class="list">
-        <li>
-          <a class="contact-link current" href="mailto:info@devstudio.com"
+    
+    <ul class="list header-list list-contact">
+        <li class="list-item" >
+          <a class="contact-link current " href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li class="list-item">
+        <li class="list-item contact">
           <a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
+    </div>
     </header>
     <main>
-      <section class="section">
+      <section class="section section-color">
+        <div class="container">
         <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="btn" type="button">Замовити послугу</button>
+     
       </section>
-      <section class="">
+      <section class="section">
+        <div class="container">
         <h2 class="visually-hidden">Наші особливості</h2>
-        <ul class="list">
-          <li class="list-item">
+        <ul class="feature-list list">
+          <li class="list-item feature-item">
             <h3 class="title">Увага до деталей</h3>
             <p class="title-list">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li class="list-item">
+          <li class="list-item feature-item">
             <h3 class="title">Пунктуальність</h3>
             <p class="title-list">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li class="list-item">
+          <li class="list-item feature-item">
             <h3 class="title">Планування</h3>
             <p class="title-list">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li class="list-item">
+          <li class="list-item feature-item">
             <h3 class="title">Сучасні технології</h3>
             <p class="title-list">
               Значимість цих проблем настільки очевидна, що реалізація планових
@@ -84,12 +90,14 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
-      <section>
+      <section class="section">
         <!--About us-->
+        <div class="container">
         <h2 class="section-title">Чим ми займаємося</h2>
-        <ul class="list">
-          <li class="list-item">
+        <ul class="feature-list list">
+          <li class="list-item feature-item-section">
             <img
               class="img"
               src="./images/about/box1.jpg"
@@ -117,12 +125,14 @@
             />
           </li>
         </ul>
+      </div>
       </section>
       <!--our team-->
-      <section class="section-team">
+      <section class=" section section-team">
+        <div class="container">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="list">
-          <li class="list-item-team">
+        <ul class=" feature-list list">
+          <li class=" feature-item list-item-team">
             <img
               class="img-team"
               src="./images/team/img1.jpg"
@@ -167,14 +177,19 @@
             <p class="team-position">UI Designer</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
-    <footer class="footer">
+    <section class="section-color section-text">
+    <footer class=" footer  container">
+      <div class="container footer-container footer-nav">
       <a class="footer-main active" href="logo"
         >Web<span class="footer-main">Studio</span></a
       >
       <address class="contacts-adress">
         <ul class="list">
+        </div>
+        <div class="footer-container">
           <li class="footer-list-item">
             <a
               class="footer-link"
@@ -189,13 +204,15 @@
               >info@devstudio.com</a
             >
           </li>
-          <li class="footer-list-item">
+          <li class="footer-list-item footer-child">
             <a class="footer-link-item" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
       </address>
+    </div>
+  </section>
     </footer>
   </body>
 </html>
