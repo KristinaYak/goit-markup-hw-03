@@ -148,23 +148,23 @@ margin-bottom: 20px;
 
 /*footer*/
 .footer-container {
+  text-align: left;
   display: block;
 margin: 0;
 padding: 0;
-margin-left: 215px;
 
+}
 
+.footer-list-item {
+  text-align: left;
+  display: block;
 }
 .footer-nav {
   padding-top: 60px;
   padding-bottom: 20px;
  
-  
-
- 
-
-
 }
+
 
 .footer-list-item:not(:last-child) {
   margin-bottom: 9px;
