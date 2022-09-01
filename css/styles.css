@@ -5,12 +5,16 @@
 
   /*Text colors*/
   --main-txt-cl: #212121;
+  --second-txt-cl: #000000;
   --light-txt-cl: #757575;
   --accent-txt-cl: #2196f3;
 
   /*Background colors*/
   --main-bg-cl: #ffffff;
+  --secondary-bg-cl: #2f303a;
   --accent-bg-cl: #2196f3;
+  --secondary-accent-bg-cl: #188ce8;
+  --light-bg-cl: #f5f4fa;
 
   /*Others*/
 }
@@ -26,10 +30,7 @@ html {
   box-sizing: inherit;
 }
 
-
-
 .body {
- 
   color: var(--main-txt-cl);
   background-color: var(--main-bg-cl);
   letter-spacing: 0.03em;
@@ -37,37 +38,26 @@ html {
   text-decoration: none;
 }
 
-
 .header {
-
   background: var(--main-bg-cl);
-  border: 1px solid #ECECEC;
-
+  border: 1px solid #ececec;
 }
 
-
 .container {
-  
- width: 1200px;
-padding-left: 15px;
-padding-right: 15px;
-margin-left: auto;
-margin-right: auto;
-
-
-   }
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*Утиліти*/
 
-
-
 .list {
-padding: 0;
-margin: 0;
+  padding: 0;
+  margin: 0;
   list-style: none;
   text-decoration: none;
-
-
 }
 
 .header-container {
@@ -79,25 +69,21 @@ margin: 0;
 .header-nav {
   display: flex;
   align-items: center;
-  
- 
- }
+}
 
- .header-list {
+.header-list {
   display: flex;
- margin-left: 93px;
-  
- }  
- .list-contact {
+  margin-left: 93px;
+}
+.list-contact {
   margin-left: auto;
- }
-
+}
 
 .header-list .list-item + .list-item {
   margin-left: 50px;
 }
 
-.header .link  {
+.header .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -109,21 +95,18 @@ margin: 0;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  
 }
-
 
 /* Main nav Ефективні рішення*/
 .main-title {
   margin-bottom: 30px;
   margin-top: 0;
- text-align: center;
+  text-align: center;
 }
 
 /*Наші особливості*/
 .list {
   display: flex;
-
 }
 .title {
   margin-top: 0;
@@ -132,15 +115,14 @@ margin: 0;
 /*about us*/
 
 .section-title {
-padding: 0;
-margin: 0;
-text-align: center;
-margin-bottom: 50px;
-
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .feature-list {
-gap: 30px;
+  gap: 30px;
 }
 
 /*our team*/
@@ -156,51 +138,40 @@ gap: 30px;
 /*footer*/
 
 .footer-container {
- 
   text-align: left;
   display: block;
- padding: 0;
-margin: 0;
-
+  padding: 0;
+  margin: 0;
 }
-
 
 .footer-list-item {
-
   text-align: left;
   display: block;
-  
 }
 .footer-nav {
- padding-top: 60px;
- margin-bottom: 20px;
-
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
-.footer-list-item:not(:last-child){
+.footer-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .footer-child {
   padding-bottom: 60px;
 }
 
-
 /*Menu nav*/
 
 .contact-link {
-    color: var(--light-txt-cl);
-    text-decoration: none;
-    
+  color: var(--light-txt-cl);
+  text-decoration: none;
 }
 .current {
   color: var(--accent-txt-cl);
 }
 
 .list-item {
-
   color: var(--light-txt-cl);
   text-decoration: none;
-  
- 
 }
 
 .list-item .contact-link:hover,
@@ -213,24 +184,20 @@ margin: 0;
   color: var(--accent-txt-cl);
 }
 
-
 .main-link {
-  
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: #000000;
-
+  color: var(--second-txt-cl);
 }
 
 .main-link.active,
 .link .activ {
   color: var(--accent-txt-cl);
 }
-
 
 .list-item {
   background: var(--main-bg-cl);
@@ -239,11 +206,9 @@ margin: 0;
 /*section Ефективні рішення для вашого бізнесу*/
 
 .section-color {
-
-background: #2f303a;
+  background: var(--secondary-bg-cl);
   text-align: center;
 }
-
 
 .section {
   padding-top: 94px;
@@ -263,12 +228,11 @@ background: #2f303a;
 
 .btn {
   display: inline-block;
- padding: 10px 32px;
- margin-bottom: 200px;
- text-align: center;
+  padding: 10px 32px;
+  margin-bottom: 200px;
+  text-align: center;
 
-  
-  background: #2196F3;
+  background: var(--accent-bg-cl);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
@@ -278,15 +242,11 @@ background: #2f303a;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: var(--main-bg-cl);
-
-
 }
-
 
 .btn:hover,
 .btn:focus {
-    background: #188CE8;
-
+  background: var(--secondary-accent-bg-cl);
 }
 
 /*sestion Наші особливості*/
@@ -309,7 +269,6 @@ background: #2f303a;
   text-transform: uppercase;
   line-height: calc(16 / 14);
   color: var(--main-txt-cl);
-  
 }
 
 .title-list {
@@ -334,7 +293,7 @@ background: #2f303a;
 
 /*our team*/
 .section-team {
-  background: #f5f4fa;
+  background: var(--light-bg-cl);
 }
 .list-item-team {
   width: 270px;
@@ -364,7 +323,7 @@ background: #2f303a;
 
 /*footer*/
 .footer {
-  background: #2f303a;
+  background: var(--secondary-bg-cl);
 }
 
 .footer-main {
