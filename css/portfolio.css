@@ -143,6 +143,7 @@ margin-top: 20px;
 padding: 0;
 margin-left: 24px;
 margin-bottom: 20px;
+
 }
 
 /*footer*/
@@ -150,21 +151,29 @@ margin-bottom: 20px;
   display: block;
 margin: 0;
 padding: 0;
-text-align: left;
+margin-left: 215px;
+
 
 }
-.footer-group {
+.footer-nav {
   padding-top: 60px;
   padding-bottom: 20px;
+ 
+  
+
+ 
+
 
 }
 
 .footer-list-item:not(:last-child) {
   margin-bottom: 9px;
+  
 }
 
 .footer-child {
   padding-bottom: 60px;
+
 
 }
 /*Шапка сторінки*/
