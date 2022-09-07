@@ -21,14 +21,6 @@
 
 /*Custom styles*/
 
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 
 .body {
   font-family: "Roboto", sans-serif;
@@ -37,6 +29,10 @@ html {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
+}
+.list {
+  margin: 0;
+  padding: 0;
 }
 .container {
   width: 1200px;
@@ -138,10 +134,7 @@ margin-top: 4px;
   margin-top: 20px;
 }
 
-.list {
-  margin: 0;
-  padding: 0;
-}
+
 
 
 
@@ -263,7 +256,10 @@ margin-top: 4px;
 }
 .group-nav {
   padding: 20px 24px;
-}
+  border-bottom: 1px solid #EEEEEE;
+   border-left: 1px solid #EEEEEE;
+   border-right: 1px solid #EEEEEE;
+  }
 
 .main-title {
   font-family: inherit;
